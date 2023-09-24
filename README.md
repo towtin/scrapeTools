@@ -18,7 +18,7 @@ git clone https://github.com/towtin/scrapeTools.git
 
 ~Install dependencies (make sure you are in the root of this repository)
 ```sh
-npm install axios
+npm install
 ```
 
 ~Generate a random proxy
@@ -35,8 +35,8 @@ node getHeaders
 I mainly used `axios` for the functionality and `proxyscrape.com` for the free elite proxies api source.
 
 ## ⭐ Support 
-Support this project by ⭐ Starring this repo
-📍 10 ⭐ - will add http header generator and develop this project into npm package.
+Support this project by ⭐ Starring this repo <br />
+📍 10 ⭐ - will add http header generator and develop this project into npm package.<br />
 📍 100 ⭐ - will develop captcha and cloudflare bot detection bypass tool.
 
 ---
