@@ -1,4 +1,4 @@
-function getUserAgent(os, browser) {
+const getUserAgent = (os, browser) => {
   const osType = {
     windows: "Windows NT 10.0; Win64; x64",
     mac: "Macintosh; Intel Mac OS X 10_15_7",
@@ -12,6 +12,6 @@ function getUserAgent(os, browser) {
   };
 
   return userAgent[browser];
-}
+};
 
-console.log(getUserAgent("linux", "firefox"));
+console.log(getUserAgent("windows", "chrome"));

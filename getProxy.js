@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 
-function gatherProxy(types = "http") {
+const gatherProxy = (types = "http") => {
   const proxies = [];
   const link = `https://api.proxyscrape.com/v2/?request=displayproxies&protocol=${types}&timeout=2000&country=all&ssl=all&anonymity=elite`;
 
@@ -32,7 +32,7 @@ function gatherProxy(types = "http") {
   }
 
   return getProxiesFromLink(link);
-}
+};
 
 gatherProxy("socks5")
   .then((proxies) => {
